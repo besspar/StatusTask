@@ -14,7 +14,7 @@ class TreeStore:
         return [item for item in self.items if item['parent'] == id]
 
     def getAllParents(self, id):
-        parent_id: int | str = id
+        parent_id: int|str = id
         result = []
 
         while parent_id != 'root':

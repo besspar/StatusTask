@@ -19,7 +19,7 @@ class TreeStore:
         return [item for item in self.items.values() if item['parent'] == id]
 
     def getAllParents(self, id):
-        parent_id: int|str = id
+        parent_id: int|str = id  #начальный parent_id равен id начального элемента, чтобы включить его в родительскую цепочку
         result = []
 
         while parent_id != 'root':
